@@ -1,0 +1,33 @@
+Os valores são calculados a partir de uma imagem 
+digitalizada de células mamárias, obtidas através de
+"fine needle aspirate" (FNA).
+
+AS variáveis descrevem as características dos 
+núcleos celulares presentes na imagem.
+
+São obtidos 3 tipos de medidas celulares:
+A média (mean), erro padrão (se) e os 
+piores (worst), que são a média dos três maiores 
+valores observados nas células. 
+
+Por exemplo, para a instância area temos 3 medidas:
+"area_mean" 
+"area_se"
+"area_worst"
+
+Attribute Information:
+  
+Diagnosis (M = malignant, B = benign)
+
+Ten real-valued features are computed for each cell nucleus:
+
+a) radius (mean of distances from center to points on the perimeter)
+b) texture (standard deviation of gray-scale values)
+c) perimeter
+d) area
+e) smoothness (local variation in radius lengths)
+f) compactness (perimeter^2 / area - 1.0)
+g) concavity (severity of concave portions of the contour)
+h) concave points (number of concave portions of the contour)
+i) symmetry
+j) fractal dimension ("coastline approximation" - 1)
