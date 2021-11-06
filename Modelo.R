@@ -65,10 +65,10 @@ ggplot(data=oob.error.data, aes(x=Trees, y=Error)) +
   geom_line(aes(color=Type))
 #ntree = 380 parece adequado
 
-#pre processamentos necessários juntos para salvar no rdata
-preproc <- preProcess(treino, method = c("knnImpute","center", "scale","YeoJohnson","corr"))
-treino <- predict(preproc,treino)
-teste <- predict(preproc,teste)
+# #pre processamentos necessários juntos para salvar no rdata
+# preproc <- preProcess(treino, method = c("knnImpute","center", "scale","YeoJohnson","corr"))
+# treino <- predict(preproc,treino)
+# teste <- predict(preproc,teste)
 
 #construção do modeolo
 set.seed(100)
